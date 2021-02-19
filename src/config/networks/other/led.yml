@@ -1,0 +1,44 @@
+id: LED operation
+inputs:
+  - normalizerRef: boolean
+  - normalizerRef: boolean
+  - normalizerRef: boolean
+  - normalizerRef: boolean
+  - normalizerRef: boolean
+  - normalizerRef: boolean
+  - normalizerRef: boolean
+hiddenLayersCounts: [ 8 ]
+outputs:
+  - normalizerRef: integer
+    normalizerOptions:
+      min: 0
+      max: 9
+strategy:
+  id: logistic
+  options:
+    minWeight: -1000
+    maxWeight: 1000
+training:
+  expectedMaxIterations: 2000
+  learningRate: 0.2
+  usecases:
+    - inputs: [ true, true, true, true, true, true, false ]
+      outputs: 0
+    - inputs: [ false, true, true, false, false, false, false ]
+      outputs: 1
+    - inputs: [ true, true, false, true, true, false, true ]
+      outputs: 2
+    - inputs: [ true, true, true, true, false, false, true ]
+      outputs: 3
+    - inputs: [ false, true, true, false, false, true, true ]
+      outputs: 4
+    - inputs: [ true, false, true, true, false, true, true ]
+      outputs: 5
+    - inputs: [ true, false, true, true, true, true, true ]
+      outputs: 6
+    - inputs: [ true, true, true, false, false, false, false ]
+      outputs: 7
+    - inputs: [ true, true, true, true, true, true, true ]
+      outputs: 8
+    - inputs: [ true, true, true, true, false, true, true ]
+      outputs: 9

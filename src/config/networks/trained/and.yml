@@ -1,0 +1,73 @@
+id: AND operation
+inputs:
+  - bias: -0.837520028419775
+    depth: 0
+    id: '1'
+    index: 0
+    normalizerRef: boolean
+  - bias: -0.9848074921519561
+    depth: 0
+    id: '2'
+    index: 1
+    normalizerRef: boolean
+hiddenLayers:
+  - - bias: -0.20410244501524996
+      depth: 1
+      id: '3'
+      index: 0
+    - bias: -0.22622223281926324
+      depth: 1
+      id: '4'
+      index: 1
+    - bias: 0.8429391423118401
+      depth: 1
+      id: '5'
+      index: 2
+outputs:
+  - bias: -0.5400357699485421
+    depth: 2
+    id: '6'
+    index: 0
+    normalizerRef: boolean
+strategy:
+  id: logistic
+  options:
+    minWeight: -1000
+    maxWeight: 1000
+connections:
+  - id: '7'
+    sourceRef: '1'
+    targetRef: '3'
+    weight: 0.07048612690459811
+  - id: '8'
+    sourceRef: '1'
+    targetRef: '4'
+    weight: 0.9808563762099686
+  - id: '9'
+    sourceRef: '1'
+    targetRef: '5'
+    weight: 0.8228271648764652
+  - id: '10'
+    sourceRef: '2'
+    targetRef: '3'
+    weight: 0.9550733622028551
+  - id: '11'
+    sourceRef: '2'
+    targetRef: '4'
+    weight: 0.8200947797809954
+  - id: '12'
+    sourceRef: '2'
+    targetRef: '5'
+    weight: 0.2730735167633184
+  - id: '13'
+    sourceRef: '3'
+    targetRef: '6'
+    weight: 0.12478003943482976
+  - id: '14'
+    sourceRef: '4'
+    targetRef: '6'
+    weight: 0.07692732528922198
+  - id: '15'
+    sourceRef: '5'
+    targetRef: '6'
+    weight: 0.49442324722038644

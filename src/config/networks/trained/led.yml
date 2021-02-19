@@ -1,0 +1,365 @@
+id: LED operation
+inputs:
+  - bias: -0.7432137687409002
+    depth: 0
+    id: '1'
+    index: 0
+    normalizerRef: boolean
+  - bias: -0.33900914308822383
+    depth: 0
+    id: '2'
+    index: 1
+    normalizerRef: boolean
+  - bias: -0.0019701190220540177
+    depth: 0
+    id: '3'
+    index: 2
+    normalizerRef: boolean
+  - bias: -0.7334466359956395
+    depth: 0
+    id: '4'
+    index: 3
+    normalizerRef: boolean
+  - bias: -0.3788240143990702
+    depth: 0
+    id: '5'
+    index: 4
+    normalizerRef: boolean
+  - bias: -0.5569988015184082
+    depth: 0
+    id: '6'
+    index: 5
+    normalizerRef: boolean
+  - bias: 0.7822162011928584
+    depth: 0
+    id: '7'
+    index: 6
+    normalizerRef: boolean
+hiddenLayers:
+  - - bias: 0.19488066957307212
+      depth: 1
+      id: '8'
+      index: 0
+    - bias: -0.931916338862864
+      depth: 1
+      id: '9'
+      index: 1
+    - bias: -2.1010182733021168
+      depth: 1
+      id: '10'
+      index: 2
+    - bias: -2.667224694623567
+      depth: 1
+      id: '11'
+      index: 3
+    - bias: -0.4534802447884449
+      depth: 1
+      id: '12'
+      index: 4
+    - bias: 1.364504008677613
+      depth: 1
+      id: '13'
+      index: 5
+    - bias: 0.06474847421798936
+      depth: 1
+      id: '14'
+      index: 6
+    - bias: 1.1183529829355265
+      depth: 1
+      id: '15'
+      index: 7
+outputs:
+  - bias: -2.3680045702868844
+    depth: 2
+    id: '16'
+    index: 0
+    normalizerRef: integer
+    normalizerOptions:
+      min: 0
+      max: 9
+strategy:
+  id: logistic
+  options:
+    minWeight: -1000
+    maxWeight: 1000
+connections:
+  - id: '17'
+    sourceRef: '1'
+    targetRef: '8'
+    weight: 0.6378712753050386
+  - id: '18'
+    sourceRef: '1'
+    targetRef: '9'
+    weight: 0.7560360286534732
+  - id: '19'
+    sourceRef: '1'
+    targetRef: '10'
+    weight: 3.9393701275477335
+  - id: '20'
+    sourceRef: '1'
+    targetRef: '11'
+    weight: 0.9808387373669091
+  - id: '21'
+    sourceRef: '1'
+    targetRef: '12'
+    weight: 0.6327869106021276
+  - id: '22'
+    sourceRef: '1'
+    targetRef: '13'
+    weight: 0.1737807021424238
+  - id: '23'
+    sourceRef: '1'
+    targetRef: '14'
+    weight: 0.2271750990775105
+  - id: '24'
+    sourceRef: '1'
+    targetRef: '15'
+    weight: 0.2654365131950569
+  - id: '25'
+    sourceRef: '2'
+    targetRef: '8'
+    weight: 0.3585400619792773
+  - id: '26'
+    sourceRef: '2'
+    targetRef: '9'
+    weight: 0.25167266488698103
+  - id: '27'
+    sourceRef: '2'
+    targetRef: '10'
+    weight: -0.4570849435288354
+  - id: '28'
+    sourceRef: '2'
+    targetRef: '11'
+    weight: 2.2131509414878856
+  - id: '29'
+    sourceRef: '2'
+    targetRef: '12'
+    weight: 0.2675623729351179
+  - id: '30'
+    sourceRef: '2'
+    targetRef: '13'
+    weight: 0.560237740192189
+  - id: '31'
+    sourceRef: '2'
+    targetRef: '14'
+    weight: 0.6188667519041672
+  - id: '32'
+    sourceRef: '2'
+    targetRef: '15'
+    weight: 0.25269499288220004
+  - id: '33'
+    sourceRef: '3'
+    targetRef: '8'
+    weight: 0.8811941808424776
+  - id: '34'
+    sourceRef: '3'
+    targetRef: '9'
+    weight: 0.20211133793684333
+  - id: '35'
+    sourceRef: '3'
+    targetRef: '10'
+    weight: -0.5165038261794364
+  - id: '36'
+    sourceRef: '3'
+    targetRef: '11'
+    weight: 0.6741762064512934
+  - id: '37'
+    sourceRef: '3'
+    targetRef: '12'
+    weight: 0.6353994984275747
+  - id: '38'
+    sourceRef: '3'
+    targetRef: '13'
+    weight: 0.6904700715446427
+  - id: '39'
+    sourceRef: '3'
+    targetRef: '14'
+    weight: 0.7747398637849097
+  - id: '40'
+    sourceRef: '3'
+    targetRef: '15'
+    weight: 0.4883248118343551
+  - id: '41'
+    sourceRef: '4'
+    targetRef: '8'
+    weight: 0.7013381825513382
+  - id: '42'
+    sourceRef: '4'
+    targetRef: '9'
+    weight: 0.3586347566970062
+  - id: '43'
+    sourceRef: '4'
+    targetRef: '10'
+    weight: 0.3931318835417196
+  - id: '44'
+    sourceRef: '4'
+    targetRef: '11'
+    weight: -5.209867869614708
+  - id: '45'
+    sourceRef: '4'
+    targetRef: '12'
+    weight: 0.1617318075977359
+  - id: '46'
+    sourceRef: '4'
+    targetRef: '13'
+    weight: 0.8945027098686905
+  - id: '47'
+    sourceRef: '4'
+    targetRef: '14'
+    weight: 1.1365144773342486
+  - id: '48'
+    sourceRef: '4'
+    targetRef: '15'
+    weight: 0.9749553023838016
+  - id: '49'
+    sourceRef: '5'
+    targetRef: '8'
+    weight: 0.43306169689665225
+  - id: '50'
+    sourceRef: '5'
+    targetRef: '9'
+    weight: -0.009533175563254387
+  - id: '51'
+    sourceRef: '5'
+    targetRef: '10'
+    weight: -0.3356942850435067
+  - id: '52'
+    sourceRef: '5'
+    targetRef: '11'
+    weight: 0.19909194096270116
+  - id: '53'
+    sourceRef: '5'
+    targetRef: '12'
+    weight: -0.1810510304231916
+  - id: '54'
+    sourceRef: '5'
+    targetRef: '13'
+    weight: 0.10488800652534391
+  - id: '55'
+    sourceRef: '5'
+    targetRef: '14'
+    weight: 0.06472978184854933
+  - id: '56'
+    sourceRef: '5'
+    targetRef: '15'
+    weight: 0.5939600996736686
+  - id: '57'
+    sourceRef: '6'
+    targetRef: '8'
+    weight: 0.6248117453900757
+  - id: '58'
+    sourceRef: '6'
+    targetRef: '9'
+    weight: 0.4806974248619475
+  - id: '59'
+    sourceRef: '6'
+    targetRef: '10'
+    weight: -1.593615619562083
+  - id: '60'
+    sourceRef: '6'
+    targetRef: '11'
+    weight: 3.045343168775982
+  - id: '61'
+    sourceRef: '6'
+    targetRef: '12'
+    weight: 0.02449214427988382
+  - id: '62'
+    sourceRef: '6'
+    targetRef: '13'
+    weight: 0.6029287356412771
+  - id: '63'
+    sourceRef: '6'
+    targetRef: '14'
+    weight: 0.8126926869352356
+  - id: '64'
+    sourceRef: '6'
+    targetRef: '15'
+    weight: 0.9258614869489713
+  - id: '65'
+    sourceRef: '7'
+    targetRef: '8'
+    weight: 0.8066151277041237
+  - id: '66'
+    sourceRef: '7'
+    targetRef: '9'
+    weight: 0.48119690151660044
+  - id: '67'
+    sourceRef: '7'
+    targetRef: '10'
+    weight: 2.7007449202080234
+  - id: '68'
+    sourceRef: '7'
+    targetRef: '11'
+    weight: 2.987288298187818
+  - id: '69'
+    sourceRef: '7'
+    targetRef: '12'
+    weight: 0.6562678080318937
+  - id: '70'
+    sourceRef: '7'
+    targetRef: '13'
+    weight: 0.556475124644938
+  - id: '71'
+    sourceRef: '7'
+    targetRef: '14'
+    weight: 1.2219846282501396
+  - id: '72'
+    sourceRef: '7'
+    targetRef: '15'
+    weight: 0.9172944608533895
+  - id: '73'
+    sourceRef: '8'
+    targetRef: '16'
+    weight: -0.760302206957252
+  - id: '74'
+    sourceRef: '9'
+    targetRef: '16'
+    weight: 0.6545527700411367
+  - id: '75'
+    sourceRef: '10'
+    targetRef: '16'
+    weight: 4.478158032331868
+  - id: '76'
+    sourceRef: '11'
+    targetRef: '16'
+    weight: 5.986720161183776
+  - id: '77'
+    sourceRef: '12'
+    targetRef: '16'
+    weight: 0.4221580668807277
+  - id: '78'
+    sourceRef: '13'
+    targetRef: '16'
+    weight: -1.5625779617460855
+  - id: '79'
+    sourceRef: '14'
+    targetRef: '16'
+    weight: -1.1703665289627498
+  - id: '80'
+    sourceRef: '15'
+    targetRef: '16'
+    weight: -1.6386486272633674
+training:
+  expectedMaxIterations: 2000
+  learningRate: 0.2
+  usecases:
+    - inputs: [ true, true, true, true, true, true, false ]
+      outputs: 0
+    - inputs: [ false, true, true, false, false, false, false ]
+      outputs: 1
+    - inputs: [ true, true, false, true, true, false, true ]
+      outputs: 2
+    - inputs: [ true, true, true, true, false, false, true ]
+      outputs: 3
+    - inputs: [ false, true, true, false, false, true, true ]
+      outputs: 4
+    - inputs: [ true, false, true, true, false, true, true ]
+      outputs: 5
+    - inputs: [ true, false, true, true, true, true, true ]
+      outputs: 6
+    - inputs: [ true, true, true, false, false, false, false ]
+      outputs: 7
+    - inputs: [ true, true, true, true, true, true, true ]
+      outputs: 8
+    - inputs: [ true, true, true, true, false, true, true ]
+      outputs: 9

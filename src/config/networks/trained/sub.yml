@@ -1,0 +1,42 @@
+id: SUB operation
+inputs:
+  - bias: 0.4125315860985901
+    depth: 0
+    id: '1'
+    index: 0
+    normalizerRef: integer
+    normalizerOptions:
+      min: 0
+      max: 100
+  - bias: -0.08786108084946953
+    depth: 0
+    id: '2'
+    index: 1
+    normalizerRef: integer
+    normalizerOptions:
+      min: 0
+      max: 100
+hiddenLayers: []
+outputs:
+  - bias: 0.5019079399994767
+    depth: 1
+    id: '3'
+    index: 0
+    normalizerRef: integer
+    normalizerOptions:
+      min: -100
+      max: 100
+strategy:
+  id: identity
+  options:
+    minWeight: -1000
+    maxWeight: 1000
+connections:
+  - id: '4'
+    sourceRef: '1'
+    targetRef: '3'
+    weight: 0.495754211459289
+  - id: '5'
+    sourceRef: '2'
+    targetRef: '3'
+    weight: -0.500072143450385

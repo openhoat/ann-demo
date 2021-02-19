@@ -1,0 +1,24 @@
+id: MULTIPLY operation
+inputs:
+  - normalizerRef: integer
+    normalizerOptions:
+      min: 0
+      max: 10
+  - normalizerRef: integer
+    normalizerOptions:
+      min: 0
+      max: 10
+outputs:
+  - normalizerRef: integer
+    normalizerOptions:
+      min: 0
+      max: 100
+hiddenLayersCounts: [ ]
+strategy:
+  id: multiply
+  options:
+    minWeight: -1000
+    maxWeight: 1000
+training:
+  expectedMaxIterations: 2
+  learningRate: 0.2

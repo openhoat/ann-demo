@@ -1,0 +1,33 @@
+id: Chat bot
+inputs:
+  - normalizerRef: phrase
+  - normalizerRef: phrase
+  - normalizerRef: phrase
+  - normalizerRef: phrase
+  - normalizerRef: phrase
+hiddenLayersCounts: [ 6 ]
+outputs:
+  - normalizerRef: phrase
+  - normalizerRef: phrase
+  - normalizerRef: phrase
+  - normalizerRef: phrase
+  - normalizerRef: phrase
+strategy:
+  id: logistic
+  options:
+    minWeight: -1000
+    maxWeight: 1000
+training:
+  expectedMaxIterations: 2000
+  learningRate: 0.2
+  usecases:
+    - inputs: [ 'how', 'are', 'you', '?', ' ' ]
+      outputs: [ 'fine', 'thank', 'you', ' ', ' ' ]
+    - inputs: [ 'what', 'is', 'your', 'name', '?' ]
+      outputs: [ 'my', 'name', 'is', 'robert', ' ' ]
+    - inputs: [ 'how', 'old', 'are', 'you', '?' ]
+      outputs: [ 'i', 'do', 'not', 'know', ' ' ]
+    - inputs: [ 'do', 'you', 'love', 'me', '?' ]
+      outputs: [ 'i', 'love', 'you', ' ', ' ' ]
+    - inputs: [ 'will', 'you', 'marry', 'me', '?' ]
+      outputs: [ 'are', 'you', 'single', '?', ' ' ]

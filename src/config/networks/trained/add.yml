@@ -1,0 +1,42 @@
+id: ADD operation
+inputs:
+  - bias: 0
+    depth: 0
+    id: '1'
+    index: 0
+    normalizerOptions:
+      min: 0
+      max: 100
+    normalizerRef: integer
+  - bias: 0
+    depth: 0
+    id: '2'
+    index: 1
+    normalizerOptions:
+      min: 0
+      max: 100
+    normalizerRef: integer
+hiddenLayers: []
+outputs:
+  - bias: 0
+    depth: 1
+    id: '3'
+    index: 0
+    normalizerOptions:
+      min: 0
+      max: 200
+    normalizerRef: integer
+strategy:
+  id: identity
+  options:
+    minWeight: -1000
+    maxWeight: 1000
+connections:
+  - id: '4'
+    sourceRef: '1'
+    targetRef: '3'
+    weight: 0.5
+  - id: '5'
+    sourceRef: '2'
+    targetRef: '3'
+    weight: 0.5

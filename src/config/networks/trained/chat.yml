@@ -1,0 +1,388 @@
+id: Chat bot
+inputs:
+  - bias: 0.8610184746710541
+    depth: 0
+    id: '1'
+    index: 0
+    normalizerRef: phrase
+  - bias: -0.8699452909197398
+    depth: 0
+    id: '2'
+    index: 1
+    normalizerRef: phrase
+  - bias: -0.4564835452036764
+    depth: 0
+    id: '3'
+    index: 2
+    normalizerRef: phrase
+  - bias: 0.14613567773935765
+    depth: 0
+    id: '4'
+    index: 3
+    normalizerRef: phrase
+  - bias: 0.9495839327351137
+    depth: 0
+    id: '5'
+    index: 4
+    normalizerRef: phrase
+hiddenLayers:
+  - - bias: 0.39919925865685923
+      depth: 1
+      id: '6'
+      index: 0
+    - bias: -2.497797745695511
+      depth: 1
+      id: '7'
+      index: 1
+    - bias: 1.5677478356612664
+      depth: 1
+      id: '8'
+      index: 2
+    - bias: -1.829842349810092
+      depth: 1
+      id: '9'
+      index: 3
+    - bias: -0.6292813057014113
+      depth: 1
+      id: '10'
+      index: 4
+    - bias: 1.465522169546769
+      depth: 1
+      id: '11'
+      index: 5
+outputs:
+  - bias: -1.355342302942448
+    depth: 2
+    id: '12'
+    index: 0
+    normalizerRef: phrase
+  - bias: 0.2868915493765967
+    depth: 2
+    id: '13'
+    index: 1
+    normalizerRef: phrase
+  - bias: 0.6901393095491567
+    depth: 2
+    id: '14'
+    index: 2
+    normalizerRef: phrase
+  - bias: -3.3672816131594834
+    depth: 2
+    id: '15'
+    index: 3
+    normalizerRef: phrase
+  - bias: -2.6233476669316076
+    depth: 2
+    id: '16'
+    index: 4
+    normalizerRef: phrase
+strategy:
+  id: logistic
+  options:
+    minWeight: -1000
+    maxWeight: 1000
+connections:
+  - id: '17'
+    sourceRef: '1'
+    targetRef: '6'
+    weight: 1.2027775289415104
+  - id: '18'
+    sourceRef: '1'
+    targetRef: '7'
+    weight: 5.225895647809238
+  - id: '19'
+    sourceRef: '1'
+    targetRef: '8'
+    weight: -0.39628026025375224
+  - id: '20'
+    sourceRef: '1'
+    targetRef: '9'
+    weight: 4.877178361249887
+  - id: '21'
+    sourceRef: '1'
+    targetRef: '10'
+    weight: 0.340464529217619
+  - id: '22'
+    sourceRef: '1'
+    targetRef: '11'
+    weight: 0.49774336803416874
+  - id: '23'
+    sourceRef: '2'
+    targetRef: '6'
+    weight: 2.084220528538878
+  - id: '24'
+    sourceRef: '2'
+    targetRef: '7'
+    weight: 1.7471636315545662
+  - id: '25'
+    sourceRef: '2'
+    targetRef: '8'
+    weight: 0.6407058461998039
+  - id: '26'
+    sourceRef: '2'
+    targetRef: '9'
+    weight: -3.1429536147275665
+  - id: '27'
+    sourceRef: '2'
+    targetRef: '10'
+    weight: 0.21750511069953507
+  - id: '28'
+    sourceRef: '2'
+    targetRef: '11'
+    weight: 0.858050547608829
+  - id: '29'
+    sourceRef: '3'
+    targetRef: '6'
+    weight: 1.3166752909805717
+  - id: '30'
+    sourceRef: '3'
+    targetRef: '7'
+    weight: -3.7681713451847294
+  - id: '31'
+    sourceRef: '3'
+    targetRef: '8'
+    weight: 0.553162407969252
+  - id: '32'
+    sourceRef: '3'
+    targetRef: '9'
+    weight: -1.7660213072696682
+  - id: '33'
+    sourceRef: '3'
+    targetRef: '10'
+    weight: -2.1468917353126917
+  - id: '34'
+    sourceRef: '3'
+    targetRef: '11'
+    weight: 0.8322780833902329
+  - id: '35'
+    sourceRef: '4'
+    targetRef: '6'
+    weight: -1.527423145291119
+  - id: '36'
+    sourceRef: '4'
+    targetRef: '7'
+    weight: -0.5538158554051614
+  - id: '37'
+    sourceRef: '4'
+    targetRef: '8'
+    weight: 0.9441022256774074
+  - id: '38'
+    sourceRef: '4'
+    targetRef: '9'
+    weight: 0.1683707445685575
+  - id: '39'
+    sourceRef: '4'
+    targetRef: '10'
+    weight: 0.6159434224840831
+  - id: '40'
+    sourceRef: '4'
+    targetRef: '11'
+    weight: 0.8373515105347205
+  - id: '41'
+    sourceRef: '5'
+    targetRef: '6'
+    weight: -1.489064616009017
+  - id: '42'
+    sourceRef: '5'
+    targetRef: '7'
+    weight: -0.2406569998646229
+  - id: '43'
+    sourceRef: '5'
+    targetRef: '8'
+    weight: 0.33146996908224685
+  - id: '44'
+    sourceRef: '5'
+    targetRef: '9'
+    weight: 3.1499688337591336
+  - id: '45'
+    sourceRef: '5'
+    targetRef: '10'
+    weight: 2.0165480718673834
+  - id: '46'
+    sourceRef: '5'
+    targetRef: '11'
+    weight: 0.8200873670538696
+  - id: '47'
+    sourceRef: '6'
+    targetRef: '12'
+    weight: 0.6853413617276275
+  - id: '48'
+    sourceRef: '6'
+    targetRef: '13'
+    weight: 3.0108526877601265
+  - id: '49'
+    sourceRef: '6'
+    targetRef: '14'
+    weight: 1.1874103547782775
+  - id: '50'
+    sourceRef: '6'
+    targetRef: '15'
+    weight: -0.8952815600403676
+  - id: '51'
+    sourceRef: '6'
+    targetRef: '16'
+    weight: -1.2820951486474452
+  - id: '52'
+    sourceRef: '7'
+    targetRef: '12'
+    weight: -3.3255386968274525
+  - id: '53'
+    sourceRef: '7'
+    targetRef: '13'
+    weight: 3.643691241869853
+  - id: '54'
+    sourceRef: '7'
+    targetRef: '14'
+    weight: 1.7313851855814975
+  - id: '55'
+    sourceRef: '7'
+    targetRef: '15'
+    weight: 4.495955314573213
+  - id: '56'
+    sourceRef: '7'
+    targetRef: '16'
+    weight: -0.6367873787255275
+  - id: '57'
+    sourceRef: '8'
+    targetRef: '12'
+    weight: -0.34463996232967403
+  - id: '58'
+    sourceRef: '8'
+    targetRef: '13'
+    weight: -0.5462488194826626
+  - id: '59'
+    sourceRef: '8'
+    targetRef: '14'
+    weight: 0.5918095543677917
+  - id: '60'
+    sourceRef: '8'
+    targetRef: '15'
+    weight: -1.8110224512538466
+  - id: '61'
+    sourceRef: '8'
+    targetRef: '16'
+    weight: -1.6312062001968717
+  - id: '62'
+    sourceRef: '9'
+    targetRef: '12'
+    weight: 1.7213368922882109
+  - id: '63'
+    sourceRef: '9'
+    targetRef: '13'
+    weight: -0.4190602584810193
+  - id: '64'
+    sourceRef: '9'
+    targetRef: '14'
+    weight: -3.911892989839252
+  - id: '65'
+    sourceRef: '9'
+    targetRef: '15'
+    weight: 6.985006430827335
+  - id: '66'
+    sourceRef: '9'
+    targetRef: '16'
+    weight: -1.171882746618629
+  - id: '67'
+    sourceRef: '10'
+    targetRef: '12'
+    weight: 0.6345543294486099
+  - id: '68'
+    sourceRef: '10'
+    targetRef: '13'
+    weight: -3.3109637770872955
+  - id: '69'
+    sourceRef: '10'
+    targetRef: '14'
+    weight: 0.31427998940207247
+  - id: '70'
+    sourceRef: '10'
+    targetRef: '15'
+    weight: 1.2089564572547253
+  - id: '71'
+    sourceRef: '10'
+    targetRef: '16'
+    weight: -1.1723518995608773
+  - id: '72'
+    sourceRef: '11'
+    targetRef: '12'
+    weight: -0.47938341644396626
+  - id: '73'
+    sourceRef: '11'
+    targetRef: '13'
+    weight: -0.2594886687417807
+  - id: '74'
+    sourceRef: '11'
+    targetRef: '14'
+    weight: 0.2361783687884133
+  - id: '75'
+    sourceRef: '11'
+    targetRef: '15'
+    weight: -1.3671001136274
+  - id: '76'
+    sourceRef: '11'
+    targetRef: '16'
+    weight: -2.0638244029341934
+training:
+  expectedMaxIterations: 2000
+  learningRate: 0.2
+  usecases:
+    - inputs:
+        - how
+        - are
+        - you
+        - '?'
+        - ' '
+      outputs:
+        - fine
+        - thank
+        - you
+        - ' '
+        - ' '
+    - inputs:
+        - what
+        - is
+        - your
+        - name
+        - '?'
+      outputs:
+        - my
+        - name
+        - is
+        - robert
+        - ' '
+    - inputs:
+        - how
+        - old
+        - are
+        - you
+        - '?'
+      outputs:
+        - i
+        - do
+        - not
+        - know
+        - ' '
+    - inputs:
+        - do
+        - you
+        - love
+        - me
+        - '?'
+      outputs:
+        - i
+        - love
+        - you
+        - ' '
+        - ' '
+    - inputs:
+        - will
+        - you
+        - marry
+        - me
+        - '?'
+      outputs:
+        - are
+        - you
+        - single
+        - '?'
+        - ' '

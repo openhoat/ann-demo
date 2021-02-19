@@ -1,0 +1,24 @@
+id: DIVIDE operation
+inputs:
+  - normalizerRef: integer
+    normalizerOptions:
+      min: 1
+      max: 10
+  - normalizerRef: integer
+    normalizerOptions:
+      min: 1
+      max: 10
+outputs:
+  - normalizerRef: integer
+    normalizerOptions:
+      min: 0
+      max: 10
+hiddenLayersCounts: [ 2, 3, 2 ]
+strategy:
+  id: identity
+  options:
+    minWeight: -1000
+    maxWeight: 1000
+training:
+  expectedMaxIterations: 1000
+  learningRate: 0.2

@@ -1,0 +1,31 @@
+classDiagram
+    class SensorNeuron {
+      value: Number
+      outputs: NeuronConnections
+      updateDelta()
+    }
+    class InterNeuron {
+      value: Number
+      bias: Number
+      delta: Number
+      inputs: NeuronConnections
+      outputs: NeuronConnections
+      strategy: Strategy
+      activate()
+      updateDelta()
+    }
+    class MotorNeuron {
+      value: Number
+      bias: Number
+      delta: Number
+      inputs: NeuronConnections
+      strategy: Strategy
+      activate()
+      updateDelta()
+    }
+    class NeuronConnection {
+      weight: Number
+      source: Neuron
+      target: Neuron
+      updateWeight()
+    }
