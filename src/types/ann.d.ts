@@ -18,7 +18,7 @@ export interface Normalizable extends Idable, Jsonable {
 }
 
 export interface StaticStrategyable {
-  build(options: unknown): Strategyable
+  new (options?: JsonEntry): Strategyable
 }
 
 export interface Strategyable extends Idable, Jsonable {

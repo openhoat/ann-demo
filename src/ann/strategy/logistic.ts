@@ -1,9 +1,11 @@
 import { isNil, omitBy } from 'lodash'
 
-import { Strategyable } from '../../types/ann'
+import { StaticStrategyable, Strategyable } from '../../types/ann'
 import { JsonEntry } from '../../types/utils'
+import { staticImplements } from '../../utils/helper'
 import { IdentityStrategy } from './identity'
 
+@staticImplements<StaticStrategyable>()
 class LogisticStrategy extends IdentityStrategy implements Strategyable {
   constructor() {
     super()

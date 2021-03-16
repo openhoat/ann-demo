@@ -1,8 +1,10 @@
 import { isNil, omitBy, sum } from 'lodash'
 
-import { Strategyable } from '../../types/ann'
+import { StaticStrategyable, Strategyable } from '../../types/ann'
 import { JsonEntry } from '../../types/utils'
+import { staticImplements } from '../../utils/helper'
 
+@staticImplements<StaticStrategyable>()
 class IdentityStrategy implements Strategyable {
   id: string
   options: JsonEntry

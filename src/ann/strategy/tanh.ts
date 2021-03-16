@@ -1,5 +1,8 @@
+import { StaticStrategyable } from '../../types/ann'
+import { staticImplements } from '../../utils/helper'
 import { IdentityStrategy } from './identity'
 
+@staticImplements<StaticStrategyable>()
 class TanhStrategy extends IdentityStrategy {
   constructor() {
     super()
