@@ -24,21 +24,61 @@ training:
   usecases:
     - inputs: [ true, true, true, true, true, true, false ]
       outputs: 0
+    #  _
+    # | |
+    # |_|
+    #
     - inputs: [ false, true, true, false, false, false, false ]
       outputs: 1
+    #
+    #   |
+    #   |
+    #
     - inputs: [ true, true, false, true, true, false, true ]
       outputs: 2
+    #  _
+    #  _|
+    # |_
+    #
     - inputs: [ true, true, true, true, false, false, true ]
       outputs: 3
+    #  _
+    #  _|
+    #  _|
+    #
     - inputs: [ false, true, true, false, false, true, true ]
       outputs: 4
+    #
+    # |_|
+    #   |
+    #
     - inputs: [ true, false, true, true, false, true, true ]
       outputs: 5
+    #  _
+    # |_
+    #  _|
+    #
     - inputs: [ true, false, true, true, true, true, true ]
       outputs: 6
+    #  _
+    # |_
+    # |_|
+    #
     - inputs: [ true, true, true, false, false, false, false ]
       outputs: 7
+    #  _
+    #   |
+    #   |
+    #
     - inputs: [ true, true, true, true, true, true, true ]
       outputs: 8
+    #  _
+    # |_|
+    # |_|
+    #
     - inputs: [ true, true, true, true, false, true, true ]
       outputs: 9
+    #  _
+    # |_|
+    #  _|
+    #
